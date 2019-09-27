@@ -1,9 +1,14 @@
 import pygame
 
-pygame.init()
 
-screen_size = (1024, 768)
+def main():
+    pygame.init()
 
-pygame.display.set_caption('TarotPrototype')
+    screen_size = (1024, 768)
 
-screen = pygame.display.set_mode(screen_size)
+    pygame.display.set_caption('TarotPrototype')
+
+    screen = pygame.display.set_mode(screen_size)
+
+
+if __name__ == '__main__': main()
