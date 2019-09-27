@@ -1,11 +1,15 @@
 import pygame
 from pygame.constants import QUIT
 
+WIDTH = 1024
+HEIGHT = 768
+TITLE = 'TarotPrototype'
+
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((1024, 768))
-    pygame.display.set_caption('TarotPrototype')
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    pygame.display.set_caption(TITLE)
 
     while True:
         for event in pygame.event.get():
@@ -13,4 +17,5 @@ def main():
                 return
 
 
-if __name__ == '__main__': main()
+if __name__ == '__main__':
+    main()
